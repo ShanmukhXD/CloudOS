@@ -678,24 +678,6 @@ echo Now you will be redirected to the desktop
 pause
 goto desktop
 
-:sec1
-
-Please wait the virus is being removed[DONE]
-echo Congrats! You're computer is now safe
-echo Now you will be redirected to the desktop
-pause
-goto desktop
-
-:sec2
-echo You have chosen to not remove the virus. Your computer is at risk
-echo Redirecting you to the desktop...
-echo Do you want to remove the virus?
-echo 1)Yes
-echo 2)Exit and go to desktop
-set /p ant1=
-if %ant1% == 1 goto sec1
-if %ant1% == 2 goto desk1
-
 :desk1
 cls
 color 0a
