@@ -673,33 +673,10 @@ cls
 echo Scanning for viruses in your computer[DONE]
 echo Processing cloud scan...[DONE]
 echo Seatching for security breaches...[DONE]
-echo 1 found security threat found
-echo Details
-echo Time: %time% Date: %date% Source: Desktop Path: C:\OS\sysos\32 Name: os64hack:tool/remote
-echo Do you want to remove the viruses?
-echo 1)Yes
-echo 2)No
-set /p menusec=
-if %menusec% == 1 goto sec1
-if %menusec% == 2 goto sec2
-
-:sec1
-
-Please wait the virus is being removed[DONE]
-echo Congrats! You're computer is now safe
+echo No threats or security breaches were found.
 echo Now you will be redirected to the desktop
 pause
 goto desktop
-
-:sec2
-echo You have chosen to not remove the virus. Your computer is at risk
-echo Redirecting you to the desktop...
-echo Do you want to remove the virus?
-echo 1)Yes
-echo 2)Exit and go to desktop
-set /p ant1=
-if %ant1% == 1 goto sec1
-if %ant1% == 2 goto desk1
 
 :desk1
 cls
